@@ -22,8 +22,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: setup postgres database
-    - uses: ikalnytskyi/action-setup-postgres@v4
-      with:
+    - uses: harmon758/postgresql-action@v1
+      with: 
+       postgresql version: '11'
        username: postgres
        password: admin
        database: digitalbank
