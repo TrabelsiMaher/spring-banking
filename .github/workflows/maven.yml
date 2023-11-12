@@ -24,10 +24,10 @@ jobs:
     - name: setup postgres database
     - uses: ikalnytskyi/action-setup-postgres@v4
       with:
-       username: ci
-       password: sw0rdfish
-       database: test
-       port: 34837
+       username: postgres
+       password: admin
+       database: digitalbank
+       port: 5432
     - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
