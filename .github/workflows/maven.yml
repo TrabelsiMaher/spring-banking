@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: setup postgres database
     - uses: harmon758/postgresql-action@v1
-      with: 
+      with:
        postgresql version: '11'
     - name: Set up JDK 17
       uses: actions/setup-java@v3
